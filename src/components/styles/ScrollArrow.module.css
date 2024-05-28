@@ -1,0 +1,19 @@
+.scrollArrow {
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    user-select: none;
+    color: #333;
+}
+
+.scrollArrow.down {
+    bottom: 20px;
+    /* Adjust position for 'down' arrow */
+}
+
+.scrollArrow.up {
+    top: 20px;
+    /* Adjust position for 'up' arrow */
+}

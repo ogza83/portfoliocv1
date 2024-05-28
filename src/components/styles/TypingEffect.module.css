@@ -1,0 +1,26 @@
+.typing {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+    white-space: pre-wrap;
+    position: relative;
+}
+
+.caret {
+    display: inline-block;
+    width: 1px;
+    background-color: #555;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        visibility: hidden;
+    }
+
+    50% {
+        visibility: visible;
+    }
+}

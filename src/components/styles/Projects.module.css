@@ -1,0 +1,176 @@
+.projects {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.leftColumn,
+.centerColumn,
+.rightColumn {
+    flex: 1;
+    min-width: 300px;
+}
+
+.leftColumn {
+    max-width: 300px;
+    text-align: left;
+    background-color: #282c34;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 5px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 80px;
+}
+
+.leftColumn h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+.centerColumn {
+    text-align: left;
+    max-width: 800px;
+    background-color: #ffffff;
+    color: #555;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.rightColumn {
+    max-width: 300px;
+    text-align: left;
+}
+
+.projects ul {
+    list-style: none;
+    padding: 0;
+}
+
+.projects li {
+    margin-bottom: 1.5rem;
+}
+
+.projects h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.projects h4 {
+    font-size: 1rem;
+    color: #777;
+}
+
+.projects p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.typing {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    white-space: pre-wrap;
+    position: relative;
+}
+
+.caret {
+    display: inline-block;
+    width: 1px;
+    background-color: #555;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        visibility: hidden;
+    }
+
+    50% {
+        visibility: visible;
+    }
+}
+
+.scrollArrows {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    bottom: 20px;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.thumbnail {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    height: auto;
+    max-height: 125px;
+    /* Adjust this value as needed */
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: #555;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modalImage {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    height:auto;
+    max-height: 400px;
+}
+
+.closeButton {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #282c34;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
